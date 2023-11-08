@@ -3,11 +3,11 @@
 namespace Programowanie_3_PatSlo
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy L1Z3.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class L1Z3 : Window
     {
-        public MainWindow()
+        public L1Z3()
         {
             InitializeComponent();
         }
