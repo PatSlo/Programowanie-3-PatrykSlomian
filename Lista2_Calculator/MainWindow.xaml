@@ -1,0 +1,43 @@
+﻿<Window x:Class="Lista2_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lista2_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Name="Result" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" IsReadOnly="True"/>
+        <Button x:Name="Button0" Grid.Row="1" Grid.Column="0" Content="1" Click="Button_Click"/>
+        <Button x:Name="Button1" Grid.Row="1" Grid.Column="1" Content="2" Click="Button_Click"/>
+        <Button x:Name="Button2" Grid.Row="1" Grid.Column="2" Content="3" Click="Button_Click"/>
+        <Button x:Name="Button3" Grid.Row="2" Grid.Column="0" Content="4" Click="Button_Click"/>
+        <Button x:Name="Button4" Grid.Row="2" Grid.Column="1" Content="5" Click="Button_Click"/>
+        <Button x:Name="Button5" Grid.Row="2" Grid.Column="2" Content="6" Click="Button_Click"/>
+        <Button x:Name="Button6" Grid.Row="3" Grid.Column="0" Content="7" Click="Button_Click"/>
+        <Button x:Name="Button7" Grid.Row="3" Grid.Column="1" Content="8" Click="Button_Click"/>
+        <Button x:Name="Button8" Grid.Row="3" Grid.Column="2" Content="9" Click="Button_Click"/>
+        <Button x:Name="Button9" Grid.Row="4" Grid.Column="1" Content="0" Click="Button_Click"/>
+        <Button x:Name="Button10" Grid.Row="4" Grid.Column="2" Content="," Click="Button_Common_Click"/>
+        <Button x:Name="Button11" Grid.Row="4" Grid.Column="3" Content="=" Click="Button_Equal_Click"/>
+        <Button x:Name="Button12" Grid.Row="3" Grid.Column="3" Content="+" Click="Button_Arithmetic_Click"/>
+        <Button x:Name="Button13" Grid.Row="2" Grid.Column="3" Content="-" Click="Button_Arithmetic_Click"/>
+        <Button x:Name="Button14" Grid.Row="1" Grid.Column="3" Content="*" Click="Button_Arithmetic_Click"/>
+        <Button x:Name="Button15" Grid.Row="0" Grid.Column="3" Content="/" Click="Button_Arithmetic_Click"/>
+        <Button x:Name="Button16" Grid.Row="0" Grid.Column="2" Content="Bckspc" Click="Button_Backspace_Click"/>
+    </Grid>
+</Window>
