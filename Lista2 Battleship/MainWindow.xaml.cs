@@ -9,6 +9,7 @@ namespace Lista2_Battleship
 
     public partial class MainWindow : Window
     {
+        int click = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -77,11 +78,15 @@ namespace Lista2_Battleship
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (click <=12)
+            { 
             Button btn = (Button)sender;
             if (((GameModel)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())] == 0)
                 ((GameModel)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())]++;
             else if (((GameModel)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())] == 1)
                 ((GameModel)plnPersonForm.DataContext).PersonIdOne[Convert.ToInt32(btn.Tag.ToString())]--;
+                click++;
+            }
         }
 
 

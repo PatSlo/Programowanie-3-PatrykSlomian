@@ -8,6 +8,7 @@ namespace Lista2_Battleship
 {
     public partial class OpponentWindow : Window
     {
+        int click = 0;
         public OpponentWindow()
         {
             InitializeComponent();
@@ -58,8 +59,8 @@ namespace Lista2_Battleship
                     btn.Name = litera.ToString() + liczba2.ToString();
                     btn.Click += Button_Click_shot;
 
-                    Grid.SetRow(btn, liczba2 + 11); // Indeksy w siatce są od 0 do 9
-                    Grid.SetColumn(btn, litera - 'A'); // Indeksy w siatce są od 0 do 9
+                    Grid.SetRow(btn, liczba2 + 11);
+                    Grid.SetColumn(btn, litera - 'A');
 
                     plnPersonForm.Children.Add(btn);
                     tag2++;
@@ -69,6 +70,8 @@ namespace Lista2_Battleship
 
         private void Btn_Click(object sender, RoutedEventArgs e)
         {
+            if (click <= 12)
+            { 
             Button btn = (Button)sender;
             if (btn != null)
             {
@@ -77,6 +80,8 @@ namespace Lista2_Battleship
                     ((GameModel)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())]++;
                 else if (((GameModel)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())] == 1)
                     ((GameModel)plnPersonForm.DataContext).PersonIdTwo[Convert.ToInt32(btn.Tag.ToString())]--;
+                    click++;
+            }
             }
         }
 
