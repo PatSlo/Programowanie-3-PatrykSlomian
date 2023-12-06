@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfGame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Game name="Tomb Raider" platform="PC" />
-  <Game name="SpiderMan" platform="PS4" />
-  <Game name="Gotham Knights" platform="PC" />
+  <Game name="Tomb Raider" platform="PC" price="10,68 zł" />
+  <Game name="SpiderMan" platform="PS4" price="168,80 zł" />
+  <Game name="Gotham Knights" platform="PC" price="40,60 zł" />
   <Game name="Przyklad1" platform="Platofrma" />
   <Game name="cos" platform="przyklad2" />
 </ArrayOfGame>
